@@ -28,7 +28,7 @@ git init
 #6 See all the hidden file
 ls -a
 
-#7 see whats on the status area
+#7 see whats on the staging area
 git status
 In order to track our files, we need to add the working directory to the staging area
 the staging area is an intermediate area where you can chose the files you want to commit
@@ -63,4 +63,44 @@ use "git rm --cached <file>..." to unstage
 15 to descard
 use "git restore <file>..." to discard changes in working directory
 
-yes
+we paint the picture
+
+working directory > Staging Area > commit
+
+Working Directory 
+cd <folder_name> - move to a folder
+mkdir <folder_name> - create a folder
+ls - list content in a directory
+ls -a - see all hidden file
+code <file_name> - create new file
+clear - clear terminal
+CTRL C - Cancel
+
+Staging Area
+git init - create a git 
+git status - see whats on the staging area
+git add <file_name> - add a file to a staging area/ or changes that havent been committed
+git add . - add all files to the staging area
+
+
+git repository (commit)
+git commit -m "<message/comment>" - commit to all files in staging area to commit area
+git log - see commit you've made
+git diff <file_name> - shows the difference between the file on the git repo and the working directory
+git checkout <file_name> - revert back the file from git to working directory
+
+committing to github (remote server)
+#1 Go to github.. create new repository
+you can name the repository the same as your workind directory. example for me is story
+a link will be generated for your command
+
+#2 type the following command
+git remote add origin https://github.com/ninecatlife/Story.git
+where the url represents the link to your repo
+
+#3 rename your branch from master to main 
+git branch -M main
+(you can see the master showing in a bracket before a command, once you run the command it changes to main)
+
+#4 Commit
+git push -u origin main
