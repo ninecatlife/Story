@@ -37,5 +37,30 @@ Here it shows the untracked files and committed files
 
 #8 Add to staging area
 git add <file_name>
+alternatively
+git add .
+the . signifies that you are adding everything in the directorygi
+
 #9 clear the terminal
 clear
+
+#10 commit to git
+git commit -m "<message/comment>"
+
+#11 Cancel command
+press keyboard shortcut Control C
+
+#12 See commit you have made
+git log
+
+#13 Add your usename and email
+git config --global user.name "John Doe"
+git config --global user.email "john.doe@gmail.com"
+
+#14 to unstage
+use "git rm --cached <file>..." to unstage
+
+15 to descard
+use "git restore <file>..." to discard changes in working directory
+
+yes
