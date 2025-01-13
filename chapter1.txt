@@ -1,0 +1,41 @@
+
+this is how to use the terminal on vscode and add bash
+
+first you go to terminal > New terminal
+before that you go to https://gitforwindows.org/ and download Git SCM, install it. 
+At the top left of your vscode, click on View > Command Pallete > Terminal: Select Default Profile > Git bash 
+So you select the Git Bash that you installed
+
+for the new command terminal you created. Here are some command for windows
+
+#1 Move from one folder to a subfolder
+cd <folder_name>
+If you are on onedrive or any folder and want to locate a sub folder, use cd <folder name>
+this moves you from  onedrive to Desktop ~/OneDrive/Desktop
+
+#2 Create new directory
+mkdir <new_folder_name>
+
+#3 List content of a directory
+ls 
+
+#4 Create new file
+code <file_name>
+
+#5 Create Git
+git init
+
+#6 See all the hidden file
+ls -a
+
+#7 see whats on the status area
+git status
+In order to track our files, we need to add the working directory to the staging area
+the staging area is an intermediate area where you can chose the files you want to commit
+to see whats on your staging area, you use git status command.
+Here it shows the untracked files and committed files
+
+#8 Add to staging area
+git add <file_name>
+#9 clear the terminal
+clear
