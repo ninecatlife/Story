@@ -77,10 +77,11 @@ clear - clear terminal
 CTRL C - Cancel
 
 Staging Area
-git init - create a git 
+git init - create a git (the first step before anything)
 git status - see whats on the staging area
 git add <file_name> - add a file to a staging area/ or changes that havent been committed
 git add . - add all files to the staging area
+git rm --cached -r . - removes all files from the staging area
 
 
 git repository (commit)
@@ -104,3 +105,13 @@ git branch -M main
 
 #4 Commit
 git push -u origin main
+
+#5 to clone
+git clone https://github.com/example/repository.git
+
+#6 git branch
+git branch <branch-name> example git branch alien-plot
+
+# Switch branch
+git checkout alien-plot - this switches from main to alienplot
+
