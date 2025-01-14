@@ -115,3 +115,34 @@ git branch <branch-name> example git branch alien-plot
 # Switch branch
 git checkout alien-plot - this switches from main to alienplot
 
+#8 Merge branch
+git merge alien-plot
+
+#9 quit vim
+:q! - press escape if without saving the message
+
+Using Pycharm to deploy an app
+
+First initialise git
+git.init..
+You might also need to go to Setting>> Directory Mapping > edit VCS (Select Git)
+
+a git pane will show at the top and you'll see a symbol to commit
+
+Setup your env variable to store sensitive files. You can do it from edit configuration or creating an env file
+Here you can store your db URI and your secret key config
+
+Setup a WSGI server with gunicorn
+Start by creating a Procfile at the project root without any extension
+On the Procfile add >> web: gunicorn main:app
+
+Commit your changes
+
+change the debug at the bottom to False
+
+Now go to the setting. Search github and setup/connect your github to Pycharm
+
+After this. On your menu, you'll see 'git' dropdown
+menu> git > github > share project on github
+
+
